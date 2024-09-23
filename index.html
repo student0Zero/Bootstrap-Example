@@ -23,9 +23,11 @@
 
         <!-- bootstrap nav bar list with margin pushed left using mr-auto -->
         <ul class="navbar-nav mr-auto">
+
             <!-- bootstrap first item set to active to highlight it and right margin spacing of 2. with nav link to home-->
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+
             <!-- only display on small displays -->
             <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
         </ul>
@@ -80,26 +82,60 @@
         <!-- *** QUOTE START ***-->
         <section class="quotes">
             <div class="row">
+
                 <!-- bootstrap - my-5 adds verticle space for headings -->
                 <div class="col-12 my-5">
+
                     <!-- bootstrap class of uppercase -->
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
             </div>
+
             <!-- replaced div with bootstrap blockquote tag and class-->
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                        <p>Jane Doe</p>
-                    </blockquote>
+
+                    <!-- create a media class to hold the image -->
+                    <div class="media">
+
+                        <!-- bootsrap - block images for small displays -->
+                        <div class="d-none d-sm-block">
+                            <!-- bootstrap - apply rounded circle to image with right handside margin -->
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100"
+                                alt="">
+                        </div>
+
+                        <!-- bootstrap - media body div to contain quote -->
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.
+                                </p>
+                                <p>Jane Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
 
+
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!.</p>
-                        <p>John Doe</p>
-                    </blockquote>
+                    <!-- create a media class to hold the image -->
+                    <div class="media">
+
+                        <!-- bootsrap - block images for small displays -->
+                        <div class="d-none d-sm-block">
+
+                            <!-- bootstrap - apply rounded circle to image with right handside margin -->
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100" alt="">
+                        </div>
+
+                        <!-- bootstrap - media body div to contain quote -->
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!.</p>
+                                <p>John Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
