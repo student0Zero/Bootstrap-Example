@@ -19,73 +19,103 @@
     <article class="container">
         <!-- Callout -->
         <!-- note that class names are not part of bootstrap but addfed by us to organise the code -->
-        <section class="callout">
-            <h1> The finest whiskeys delivered to your doorstep.</h1>
-            <!-- para has bootstrap class of lead -->
-            <p class="lead">Sign up today to start receiving the world's best whiskey every month. <s>€19.99</s>
-                <strong><mark>First one is free!</mark></strong></p>
+        <div class="row">
+            <!-- bootstrap columns -->
+            <div class="col-12">
+                <section class="callout">
+                    <h1> The finest whiskeys delivered to your doorstep.</h1>
+                    <!-- para has bootstrap class of lead -->
+                    <p class="lead">Sign up today to start receiving the world's best whiskey every month. <s>€19.99</s>
+                        <strong><mark>First one is free!</mark></strong></p>
 
-            <!-- bootstrap large button of type success which is green -->
-            <button class="btn btn-success btn-lg">Sign Up!</button>
+                    <!-- bootstrap large button of type success which is green -->
+                    <button class="btn btn-success btn-lg">Sign Up!</button>
 
-            <!-- para has bootstrap class of muted which dims the color -->
-            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
-                    responsibly.</small>
-            </p>
-        </section>
+                    <!-- para has bootstrap class of muted which dims the color -->
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                            responsibly.</small>
+                    </p>
+                </section>
+            </div>
+        </div>
         <!-- /.callout -->
         <hr>
 
         <!-- quotes start-->
         <section class="quotes">
-            <!-- bootstrap class of uppercase -->
-            <h2 class="text-uppercase">Quotes:</h2>
-            <!-- replaced div with bootstrap blockquote tag and class-->
-            <blockquote class="blockquote">
-                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                <p>Jane Doe</p>
-            </blockquote>
-
-            <blockquote class="blockquote">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <!-- bootstrap class of uppercase -->
+                    <h2 class="text-uppercase">Quotes:</h2>
                 </div>
-                <p>I haven't been sober for months!.</p>
-                <p>John Doe</p>
-            </blockquote>
+            </div>
+            <!-- replaced div with bootstrap blockquote tag and class-->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                        <p>Jane Doe</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-12">
+                    <blockquote class="blockquote">
+                        <p>I haven't been sober for months!.</p>
+                        <p>John Doe</p>
+                    </blockquote>
+                </div>
+            </div>
         </section>
         <!-- /.quotes end-->
 
         <!-- features start -->
         <section class="features">
             <!-- bootstrap class of uppercase -->
-            <h2 class="text-uppercase">Features:</h2>
-            <div class="features">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius fugit
-                    deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium laudantium
-                    voluptate, incidunt provident mollitia distinctio.</p>
-
-                <!-- bootstrap button -->
-                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase">Features:</h2>
+                </div>
             </div>
 
-            <div class="features"></div>
-            <h3>Feature 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius fugit
-                deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium laudantium voluptate,
-                incidunt provident mollitia distinctio.</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="features">
+                        <h3>Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius
+                            fugit deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium
+                            laudantium voluptate, incidunt provident mollitia distinctio.</p>
 
-            <!-- bootstrap button -->
-            <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
+                        <!-- bootstrap button -->
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
 
-            <div class="features"></div>
-            <h3>Feature 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius fugit
-                deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium laudantium voluptate,
-                incidunt provident mollitia distinctio.</p>
+                <div class="col-12 col-md-6">
+                    <div class="features">
+                        <h3>Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius
+                            fugit deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium
+                            laudantium voluptate,
+                            incidunt provident mollitia distinctio.</p>
 
-            <!-- bootstrap button -->
-            <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                        <!-- bootstrap button -->
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+
+                <!-- in bootstrap d=display e.g. d-md-none is no display on medium display-->
+                <div class="col-12 d-md-none">
+                    <div class="features">
+                        <h3>Feature 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, et in doloremque eius
+                            fugit deleniti sequi velit iste explicabo exercitationem doloribus tenetur, praesentium
+                            laudantium
+                            voluptate, incidunt provident mollitia distinctio.</p>
+
+                        <!-- bootstrap button -->
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- features end -->
