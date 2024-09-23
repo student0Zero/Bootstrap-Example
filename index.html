@@ -16,8 +16,9 @@
 </head>
 
 <body>
+    <!-- ***NAV BAR START*** -->
     <!-- bootstrap nav bar with light background and responsive for small display -->
-    <nav class="navnar navbar-light bg-light navbar-expand-sm">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a href="" class="navbar-brand">Whiskey Drop</a>
 
         <!-- bootstrap nav bar list with margin pushed left using mr-auto -->
@@ -25,19 +26,41 @@
             <!-- bootstrap first item set to active to highlight it and right margin spacing of 2. with nav link to home-->
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <!-- only display on small displays -->
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
         </ul>
 
+        <!-- block marking text for small displays (only on medium or above)-->
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+
+
     </nav>
-    <article class="container">
-        <!-- Callout -->
+    <!-- ***NAV BAR END*** -->
+
+    <!-- ***ARTICLE START*** -->
+    <!-- bootstrap margin top of 3 -->
+    <article class="container mt-3">
+
+        <!-- *** CALLOUT START -->
         <!-- note that class names are not part of bootstrap but addfed by us to organise the code -->
         <div class="row">
             <!-- bootstrap columns -->
             <div class="col-12">
-                <section class="callout">
+
+                <!-- bootstrap - jumbotron makes callout section standout with centered text-->
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
+
                     <!-- para has bootstrap class of lead -->
-                    <p class="lead">Sign up today to start receiving the world's best whiskey every month. <s>€19.99</s>
+                    <p class="lead">Sign up today to start receiving the world's best whiskey every month.
+                        <!-- bootstrap - hide price on smaller displays (d-sm-line because this is an inline element) -->
+                        <s class="d-none d-sm-inline">€19.99</s>
+
+                        <!-- bootstrap - display break on smaller screens to ensure highlighted text below is on line of its own -->
+                        <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
 
                     <!-- bootstrap large button of type success which is green -->
@@ -50,13 +73,15 @@
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
+        <!-- *** CALLOUT END *** -->
+
         <hr>
 
-        <!-- quotes start-->
+        <!-- *** QUOTE START ***-->
         <section class="quotes">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <!-- bootstrap - my-5 adds verticle space for headings -->
+                <div class="col-12 my-5">
                     <!-- bootstrap class of uppercase -->
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
@@ -78,13 +103,14 @@
                 </div>
             </div>
         </section>
-        <!-- /.quotes end-->
+        <!-- *** QUOTE END ***-->
 
-        <!-- features start -->
+        <!-- *** FEATURE START *** -->
         <section class="features">
             <!-- bootstrap class of uppercase -->
             <div class="row">
-                <div class="col-12">
+                <!-- bootstrap - my-5 adds verticle space for headings-->
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
@@ -131,8 +157,10 @@
                 </div>
             </div>
         </section>
-        <!-- features end -->
+        <!-- ***FEATURE END*** -->
+
     </article>
+    <!-- ***ARTICLE END*** -->
 </body>
 
 </html>
