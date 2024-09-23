@@ -32,13 +32,25 @@
             <span class="navbar-toggler-icon"></span></button>
 
         <!-- bootstrap nav bar list with margin pushed left using mr-auto -->
-        <!-- div wrapper for collapsable button -->
+        <!-- bootstrap - div wrapper for collapsable button -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
 
                 <!-- bootstrap first item set to active to highlight it and right margin spacing of 2. with nav link to home-->
                 <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+
+                <!-- bootstrap - new navbar item with link -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">whiskeys</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Irish</a>
+                        <a class="dropdown-item" href="#">Scotch</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">American</a>
+                    </div>
+                </li>
 
                 <!-- only display on small displays -->
                 <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
