@@ -104,7 +104,10 @@
                         <strong><mark>First one is free!</mark></strong></p>
 
                     <!-- bootstrap large button of type success which is green -->
-                    <button class="btn btn-success btn-lg">Sign Up!</button>
+                    <!-- link button to Modal -->
+                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">
+                        Sign Up!
+                    </button>
 
                     <!-- para has bootstrap class of muted which dims the color -->
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
@@ -239,6 +242,46 @@
     </article>
     <!-- ***ARTICLE END*** -->
 
+    <!-- ### BOOTSTRAP MODAL ### -->
+    <!-- A modal is like an island of content that sitting in the middle of the page -->
+    <!-- Modal is hidden by default. requires linking to the signup button by adding the id #signUpModal on line 108-ish-->
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repreatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ### BOOTSTRAP MODAL END ### -->
+
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -248,11 +291,6 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-    </script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
 
 </body>
