@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <!-- *** NAV BAR START *** -->
+    <!-- ### NAV BAR START ### -->
 
     <!-- bootstrap nav bar with light background and responsive for small display -->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -72,12 +72,10 @@
 
 
     </nav>
-    <!-- *** NAV BAR END *** -->
+    <!-- ### NAV BAR END ### -->
 
-    <!-- *** ARTICLE START *** -->
-    <!-- bootstrap margin top of 3 -->
-    <article class="container mt-3">
-
+    <!-- ### ALTER CONTAINER START -->
+    <div class="container alert-container">
         <!-- bootsrap - sale alert but hidden for smaller displays -->
         <div class="row d-none d-sm-block">
             <div class="col-12">
@@ -94,8 +92,6 @@
 
             <!-- bootstrap columns -->
             <div class="col-12">
-
-
 
                 <!-- bootstrap - jumbotron makes callout section standout with centered text-->
                 <section class="callout jumbotron text-center">
@@ -123,11 +119,11 @@
                 </section>
             </div>
         </div>
-        <!-- *** CALLOUT END *** -->
+    </div>
+    <!-- ### ALTER CONTAINER END -->
 
-        <hr>
-
-        <!-- *** QUOTE START ***-->
+    <!-- ### QUOTES CONTAINER START -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
 
@@ -164,7 +160,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-12 col-md-6">
                     <!-- create a media class to hold the image -->
                     <div class="media">
@@ -187,8 +182,12 @@
                 </div>
             </div>
         </section>
-        <!-- *** QUOTE END ***-->
+    </div>
 
+    <!-- ### QUOTES CONTAINER END -->
+
+    <!-- ### FEATURES CONTAINER START -->
+    <div class="container features-container">
         <!-- *** FEATURE START *** -->
         <section class="features">
             <!-- bootstrap class of uppercase -->
@@ -244,12 +243,11 @@
                 </div>
             </div>
         </section>
-        <!-- ***FEATURE END*** -->
+    </div>
 
-    </article>
-    <!-- ***ARTICLE END*** -->
+    <!-- ### FEATURES CONTAINER END -->
 
-    <!-- ### BOOTSTRAP MODAL ### -->
+    <!-- ### BOOTSTRAP MODAL START ### -->
     <!-- A modal is like an island of content that sitting in the middle of the page -->
     <!-- Modal is hidden by default. requires linking to the signup button by adding the id #signUpModal on line 108-ish-->
     <div class="modal" tabindex="-1" id="signUpModal">
@@ -287,6 +285,7 @@
             </div>
         </div>
     </div>
+
     <!-- ### BOOTSTRAP MODAL END ### -->
 
     <!-- BOOTSTRAP JAVASCRIPT -->
