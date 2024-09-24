@@ -1,3 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.alerts-container {}
+
+.callout-container {
+    height: 100vh;
+    /* taken from css-tricks.com (perfect full page background image)
+     */
+    background: url(../assets/images/whiskey-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.quotes-container {}
+
+.features-container {}
