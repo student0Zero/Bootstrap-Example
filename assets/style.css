@@ -40,11 +40,24 @@ body {
 
 .features-container {}
 
+/* PAGE HEADER style */
+.page-header {
+    margin-top: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+
 /* block divider for lead text */
 .block-divider {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider-color {
@@ -54,6 +67,13 @@ body {
 .block-divider--short {
     width: 35px;
 }
+
+/* CONTENT CONTAINER style */
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 
 /* background overlay */
 .opaque-overlay {
