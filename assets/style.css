@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
 
+    /* position required for opaque overlay's absolute */
+    position: relative;
+
 }
 
 .quotes-container {}
@@ -28,10 +31,26 @@ body {
 /* block divider for lead text */
 .block-divider {
     width: 75px;
-    background-color: #f05f40;
     height: 5px;
     border: 0;
+}
 
+.block-divider-color {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+/* background overlay */
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Jumbotron styling */
