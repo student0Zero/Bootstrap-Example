@@ -52,10 +52,41 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Navbar Styles */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+/*  override boots nav class */
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* remove bootstraps navbar toggler border */
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* make navbar anchor elements bold */
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
 /* Jumbotron styling */
 .jumbotron {
     background-color: transparent;
-
 }
 
 .jumbotron-header {

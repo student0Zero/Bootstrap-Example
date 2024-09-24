@@ -27,68 +27,71 @@
 
 <body>
     <!-- ### NAV BAR START ### -->
+    <div class="container-fluid navalert-container">
 
-    <!-- bootstrap nav bar with light background and responsive for small display -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="" class="navbar-brand">Whiskey Drop</a>
+        <!-- ### ALTER CONTAINER START -->
+        <div class="container alert-container">
 
-        <!-- bootstrap - add menu bar toggle switch and align text to left -->
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- bootstrap - provides the three bar icon for button -->
-            <span class="navbar-toggler-icon"></span></button>
-
-        <!-- bootstrap nav bar list with margin pushed left using mr-auto -->
-        <!-- bootstrap - div wrapper for collapsable button -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-
-                <!-- bootstrap first item set to active to highlight it and right margin spacing of 2. with nav link to home-->
-                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-
-                <!-- bootstrap - new navbar item with link -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">whiskeys</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Irish</a>
-                        <a class="dropdown-item" href="#">Scotch</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                        <a class="dropdown-item" href="#">American</a>
+            <!-- bootsrap - sale alert but hidden for smaller displays -->
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div class="alert alert-warning">
+                        <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of
+                        6!
+                        <a href="">See here for details!</a>
                     </div>
-                </li>
-
-                <!-- only display on small displays -->
-                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-            </ul>
-        </div>
-
-        <!-- block marking text for small displays (only on medium or above)-->
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-            <a href="/login">Sign In / Sign Up</a>
-        </div>
-
-
-    </nav>
-    <!-- ### NAV BAR END ### -->
-
-    <!-- ### ALTER CONTAINER START -->
-    <div class="container alert-container">
-
-        <!-- bootsrap - sale alert but hidden for smaller displays -->
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
-                    <a href="">See here for details!</a>
                 </div>
             </div>
         </div>
         <!-- ### ALTER CONTAINER END -->
 
+        <!-- bootstrap nav bar with light background and responsive for small display -->
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="" class="navbar-brand">Whiskey Drop</a>
+
+            <!-- bootstrap - add menu bar toggle switch and align text to left -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- bootstrap - provides the three bar icon for button -->
+                <span class="navbar-toggler-icon"></span></button>
+
+            <!-- bootstrap nav bar list with margin pushed left using mr-auto -->
+            <!-- bootstrap - div wrapper for collapsable button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+
+                    <!-- bootstrap first item set to active to highlight it and right margin spacing of 2. with nav link to home-->
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+
+                    <!-- bootstrap - new navbar item with link -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">whiskeys</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Irish</a>
+                            <a class="dropdown-item" href="#">Scotch</a>
+                            <a class="dropdown-item" href="#">Japanese</a>
+                            <a class="dropdown-item" href="#">American</a>
+                        </div>
+                    </li>
+
+                    <!-- only display on small displays -->
+                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- block marking text for small displays (only on medium or above)-->
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+                <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
+            </div>
+
+        </nav>
     </div>
+    <!-- ### NAV BAR END ### -->
+
     <!-- ### CALLOUT START ### -->
     <div class="container-fluid callout-container">
 
